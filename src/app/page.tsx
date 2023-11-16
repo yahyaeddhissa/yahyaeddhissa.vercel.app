@@ -1,24 +1,6 @@
 import Link from "next/link";
-import { PropsWithChildren } from "react";
-import styles from "./button.module.css";
-
-export function Button({ children }: PropsWithChildren) {
-  return (
-    <button
-      className={"bg-green-700 rounded px-5 h-10 relative " + styles.Button}
-    >
-      {children}
-    </button>
-  );
-}
-
-export function SocialLink({ icon }: { icon: string }) {
-  return (
-    <div className="flex items-center justify-center bg-gray-900 rounded-full h-11 w-11">
-      <i className={`text-3xl ti ti-${icon}`} />
-    </div>
-  );
-}
+import { Button } from "./button";
+import { SocialLink } from "./social-link";
 
 export default function Home() {
   return (
