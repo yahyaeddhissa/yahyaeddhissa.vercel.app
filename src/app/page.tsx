@@ -129,7 +129,9 @@ export default function Home() {
             <nav className="flex md:gap-3 gap-2">
               <SocialLink icon="brand-github" />
               <SocialLink icon="brand-linkedin" />
+              <SocialLink icon="brand-stackoverflow" />
               <SocialLink icon="brand-dribbble" />
+              <SocialLink icon="brand-reddit" />
             </nav>
           </div>
         </div>
@@ -199,6 +201,15 @@ export default function Home() {
           </div>
         </Section>
       </main>
+      <footer className="h-16 px-24 flex items-center justify-center">
+        <div>
+          &#169; 2023-2024. Made With Love By
+          <Link href="/" className="text-green-600 underline ml-1">
+            Yahya Eddhissa
+          </Link>
+          . All Rights Reserved
+        </div>
+      </footer>
     </Fragment>
   );
 }
