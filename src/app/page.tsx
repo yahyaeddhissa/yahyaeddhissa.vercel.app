@@ -30,7 +30,7 @@ export default function Home() {
           <h2 className="px-3 py-1.5 bg-green-950 rounded inline-block mb-3">
             Full Stack Web Solutions Engineer
           </h2>
-          <h1 className="text-4xl font-semibold mb-6">
+          <h1 className="text-5xl font-semibold mb-6">
             <div className="mb-1.5">Design and Code Exceptional</div>
             <div>Online Experiences.</div>
           </h1>
