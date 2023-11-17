@@ -59,6 +59,31 @@ function Project() {
   );
 }
 
+function BlogPost() {
+  return (
+    <div className="rounded bg-gray-900 px-8 py-6">
+      <div className="flex justify-stretch mb-3 gap-5 text-sm items-center">
+        <div className="h-7 flex items-center bg-sky-700 rounded-full px-4">
+          Typescript
+        </div>
+        <div className="text-gray-400">29 April 2023</div>
+        <div className="h-0 border-t border-t-gray-700 flex-auto"></div>
+        <div className="text-gray-300">8 min read</div>
+      </div>
+      <h4 className="text-xl font-semibold line-clamp-2 mb-2">
+        Predictable Error Handling with Typescript - Part 1: The Result Class
+      </h4>
+      <p className="line-clamp-2 text-sm text-gray-300 font-normal mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat placeat
+        voluptatem possimus, tenetur nobis numquam praesentium rem excepturi
+        ipsa fuga sapiente aperiam officia alias dolor culpa ipsam non debitis
+        ipsum?
+      </p>
+      <p className="text-green-500 underline underline-offset-4">Read more</p>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <main>
@@ -141,6 +166,24 @@ export default function Home() {
           <Project />
           <Project />
           <Project />
+        </div>
+      </section>
+      <section className="md:px-24 px-6 py-20 border-y border-gray-700">
+        <div className="mb-3">
+          <h3 className="text-4xl font-semibold text-green-600 mb-1">
+            Latest Blog Posts
+          </h3>
+          <div className="h-0 w-32 border-t-2 border-green-600" />
+        </div>
+        <p className="text-gray-300 mb-12">
+          Below is a featued list of the most remarkable projects I built over
+          the years. Some of them are open-source, some of them are not.
+        </p>
+        <div className="grid grid-cols-2 gap-5">
+          <BlogPost />
+          <BlogPost />
+          <BlogPost />
+          <BlogPost />
         </div>
       </section>
     </main>
