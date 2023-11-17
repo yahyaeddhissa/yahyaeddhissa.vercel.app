@@ -1,6 +1,13 @@
 import Link from "next/link";
 import { Button } from "./button";
 import { SocialLink } from "./social-link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
+  description:
+    "I'm a Software Engineer currently working as the CTO and co-founder of Orderedo. I'm very enthusiastic when it comes to Developer Experience and Design Patterns, while also emphasizing on Accessibility and good User Experience. I also share what I know on my personal blog and contribute to open-source projects.",
+};
 
 export default function Home() {
   return (
@@ -37,7 +44,6 @@ export default function Home() {
           </h3>
           <div className="flex gap-6 items-center">
             <Button>View Projects</Button>
-            <Button>Blog</Button>
             <div className="h-0 w-20 border-t border-gray-500" />
             <nav className="flex gap-3">
               <SocialLink icon="brand-github" />
