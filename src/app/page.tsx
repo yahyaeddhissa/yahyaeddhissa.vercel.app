@@ -150,7 +150,7 @@ export default function Home() {
           <Skill />
         </div>
       </section>
-      <section className="md:px-24 px-6 py-20 border-y border-gray-700">
+      <section className="md:px-24 px-6 pt-20 pb-40 border-y border-gray-700">
         <div className="mb-3">
           <h3 className="text-4xl font-semibold text-green-600 mb-1">
             Featured Projects
@@ -168,7 +168,18 @@ export default function Home() {
           <Project />
         </div>
       </section>
-      <section className="md:px-24 px-6 py-20 border-y border-gray-700">
+      <section className="md:px-24 px-6 pb-20 border-y border-gray-700 relative">
+        <section className="bg-gray-950 flex items-center -mt-28 rounded-lg w-full h-56 mb-16 overflow-hidden border-gray-700 border">
+          <div className="bg-green-600 bg-opacity-5 px-16 flex items-center h-full w-full">
+            <div>
+              <p className="text-sm mb-1">Let&apos;s Collaborate</p>
+              <h4 className="text-4xl font-medium mb-6">
+                Have Any Project In Mind?
+              </h4>
+              <Button>Contact Me</Button>
+            </div>
+          </div>
+        </section>
         <div className="mb-3">
           <h3 className="text-4xl font-semibold text-green-600 mb-1">
             Latest Blog Posts
