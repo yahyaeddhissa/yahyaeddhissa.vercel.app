@@ -132,7 +132,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="md:px-24 px-6 py-20">
+      <section className="md:px-24 px-6 py-20 bg-green-600 bg-opacity-5">
         <div className="mb-3">
           <h3 className="text-4xl font-semibold text-green-600 mb-1">
             What I do best
