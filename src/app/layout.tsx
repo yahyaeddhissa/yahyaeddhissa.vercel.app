@@ -22,7 +22,12 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
         />
       </head>
-      <body className={raleway.className + " tracking-wider font-medium "}>
+      <body
+        className={
+          raleway.className +
+          " tracking-wider font-medium w-screen text-sm lg:text-base "
+        }
+      >
         {children}
       </body>
     </html>
