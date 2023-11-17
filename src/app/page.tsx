@@ -2,6 +2,8 @@ import Link from "next/link";
 import { Button } from "./button";
 import { SocialLink } from "./social-link";
 import { Metadata } from "next";
+import { Section } from "./section";
+import { Fragment } from "react";
 
 export const metadata: Metadata = {
   title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
@@ -86,7 +88,7 @@ function BlogPost() {
 
 export default function Home() {
   return (
-    <main>
+    <Fragment>
       <div className="h-screen border-b border-b-gray-800">
         <header className="flex md:justify-between justify-center items-center h-20 md:px-24 px-6 w-screen">
           <div className="flex items-center gap-2 flex-none">
@@ -132,71 +134,71 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="md:px-24 px-6 py-20 bg-green-600 bg-opacity-5">
-        <div className="mb-3">
-          <h3 className="text-4xl font-semibold text-green-600 mb-1">
-            What I do best
-          </h3>
-          <div className="h-0 w-32 border-t-2 border-green-600" />
-        </div>
-        <p className="text-gray-300 mb-12">
-          I have more than 2 years of experience building web platforms and
-          services for clients all over the world. This work involves many
-          technical skillsets and knowledge summarized below.
-        </p>
-        <div className="grid grid-cols-3 gap-10">
-          <Skill />
-          <Skill />
-          <Skill />
-        </div>
-      </section>
-      <section className="md:px-24 px-6 pt-20 pb-40 border-y border-gray-700">
-        <div className="mb-3">
-          <h3 className="text-4xl font-semibold text-green-600 mb-1">
-            Featured Projects
-          </h3>
-          <div className="h-0 w-32 border-t-2 border-green-600" />
-        </div>
-        <p className="text-gray-300 mb-12">
-          Below is a featued list of the most remarkable projects I built over
-          the years. Some of them are open-source, some of them are not.
-        </p>
-        <div className="grid grid-cols-2 gap-5">
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-        </div>
-      </section>
-      <section className="md:px-24 px-6 pb-20 border-y border-gray-700 relative">
-        <section className="bg-gray-950 flex items-center -mt-28 rounded-lg w-full h-56 mb-16 overflow-hidden border-gray-700 border">
-          <div className="bg-green-600 bg-opacity-5 px-16 flex items-center h-full w-full">
-            <div>
-              <p className="text-sm mb-1">Let&apos;s Collaborate</p>
-              <h4 className="text-4xl font-medium mb-6">
-                Have Any Project In Mind?
-              </h4>
-              <Button>Contact Me</Button>
-            </div>
+      <main>
+        <Section>
+          <div className="mb-3">
+            <h3 className="text-4xl font-semibold text-green-600 mb-1">
+              What I do best
+            </h3>
+            <div className="h-0 w-32 border-t-2 border-green-600" />
           </div>
-        </section>
-        <div className="mb-3">
-          <h3 className="text-4xl font-semibold text-green-600 mb-1">
-            Latest Blog Posts
-          </h3>
-          <div className="h-0 w-32 border-t-2 border-green-600" />
-        </div>
-        <p className="text-gray-300 mb-12">
-          Below is a featued list of the most remarkable projects I built over
-          the years. Some of them are open-source, some of them are not.
-        </p>
-        <div className="grid grid-cols-2 gap-5">
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-          <BlogPost />
-        </div>
-      </section>
-    </main>
+          <p className="text-gray-300 mb-12">
+            I have more than 2 years of experience building web platforms and
+            services for clients all over the world. This work involves many
+            technical skillsets and knowledge summarized below.
+          </p>
+          <div className="grid grid-cols-3 gap-10">
+            <Skill />
+            <Skill />
+            <Skill />
+          </div>
+        </Section>
+        <Section>
+          <div className="mb-3">
+            <h3 className="text-4xl font-semibold text-green-600 mb-1">
+              Featured Projects
+            </h3>
+            <div className="h-0 w-32 border-t-2 border-green-600" />
+          </div>
+          <p className="text-gray-300 mb-12">
+            Below is a featued list of the most remarkable projects I built over
+            the years. Some of them are open-source, some of them are not.
+          </p>
+          <div className="grid grid-cols-2 gap-5">
+            <Project />
+            <Project />
+            <Project />
+            <Project />
+          </div>
+        </Section>
+        <Section>
+          <div>
+            <p className="text-sm mb-1">Let&apos;s Collaborate</p>
+            <h4 className="text-4xl font-medium mb-6">
+              Have Any Project In Mind?
+            </h4>
+            <Button>Contact Me</Button>
+          </div>
+        </Section>
+        <Section>
+          <div className="mb-3">
+            <h3 className="text-4xl font-semibold text-green-600 mb-1">
+              Latest Blog Posts
+            </h3>
+            <div className="h-0 w-32 border-t-2 border-green-600" />
+          </div>
+          <p className="text-gray-300 mb-12">
+            Below is a featued list of the most remarkable projects I built over
+            the years. Some of them are open-source, some of them are not.
+          </p>
+          <div className="grid grid-cols-2 gap-5">
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
+            <BlogPost />
+          </div>
+        </Section>
+      </main>
+    </Fragment>
   );
 }
