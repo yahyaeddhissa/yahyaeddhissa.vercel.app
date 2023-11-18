@@ -4,7 +4,6 @@ import { SocialLink } from "./social-link";
 import { Metadata } from "next";
 import { Section } from "./section";
 import { Fragment } from "react";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
@@ -26,34 +25,42 @@ function Skill({ title, description }: { title: string; description: string }) {
   );
 }
 
-function Project() {
+function Project({
+  title,
+  description,
+  imageUrl = "",
+  tags,
+}: {
+  title: string;
+  description: string;
+  imageUrl?: string;
+  tags: string[];
+}) {
   return (
     <div className="bg-sky-600 bg-opacity-10 rounded relative overflow-hidden">
       <div className="flex items-start gap-4 px-7 py-4 mb-3">
         <div className="flex items-center gap-4">
-          <h4 className="text-xl font-medium">Archade</h4>
+          <h4 className="text-xl font-medium">{title}</h4>
           <div className="h-0 w-10 border-t border-gray-500 flex-none" />
         </div>
-        <p className="font-normal">
-          Archade is an open-source social network, made for architects and
-          construction engineers, plus all building enthusiasts
-        </p>
+        <p className="font-normal line-clamp-3">{description}</p>
       </div>
       <div className="flex">
         <div className="ml-auto w-[90%]">
           <div className="flex gap-2 text-xs font-normal mb-3">
-            {["Social Networking", "Discussions", "Authentication"].map(
-              (item) => (
-                <div
-                  className="flex h-7 items-center px-4 bg-white bg-opacity-5 rounded-full"
-                  key={Math.random()}
-                >
-                  {item}
-                </div>
-              )
-            )}
+            {tags.map((item) => (
+              <div
+                className="flex h-7 items-center px-4 bg-white bg-opacity-5 rounded-full"
+                key={Math.random()}
+              >
+                {item}
+              </div>
+            ))}
           </div>
-          <div className="h-60 w-full bg-sky-600 rounded-tl-md"></div>
+          <div
+            className="h-60 w-full bg-sky-600 bg-cover rounded-tl-md"
+            style={{ backgroundImage: `url("${imageUrl}")` }}
+          ></div>
         </div>
       </div>
     </div>
@@ -178,10 +185,26 @@ export default function Home() {
             the years. Some of them are open-source, some of them are not.
           </p>
           <div className="grid grid-cols-2 gap-5">
-            <Project />
-            <Project />
-            <Project />
-            <Project />
+            <Project
+              title="Archade"
+              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
+              tags={["Social Networking", "Discussions", "Authentication"]}
+            />
+            <Project
+              title="Archade"
+              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
+              tags={["Social Networking", "Discussions", "Authentication"]}
+            />
+            <Project
+              title="Archade"
+              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
+              tags={["Social Networking", "Discussions", "Authentication"]}
+            />
+            <Project
+              title="Archade"
+              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
+              tags={["Social Networking", "Discussions", "Authentication"]}
+            />
           </div>
         </Section>
         <Section>
