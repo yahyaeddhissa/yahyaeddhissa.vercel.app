@@ -12,17 +12,15 @@ export const metadata: Metadata = {
     "I'm a Software Engineer currently working as the CTO and co-founder of Orderedo. I'm very enthusiastic when it comes to Developer Experience and Design Patterns, while also emphasizing on Accessibility and good User Experience. I also share what I know on my personal blog and contribute to open-source projects.",
 };
 
-function Skill() {
+function Skill({ title, description }: { title: string; description: string }) {
   return (
     <div>
       <div className="mb-1.5">
         <i className={`ti ti-world text-4xl`} />
       </div>
-      <h4 className="text-xl font-semibold mb-2">Full Stack Web Development</h4>
-      <p className="text-sm font-normal text-gray-400">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-        quidem velit consequuntur ullam tempore voluptas architecto recusandae,
-        optio nam quae.
+      <h4 className="text-xl font-semibold mb-2">{title}</h4>
+      <p className="text-sm font-normal text-gray-400 line-clamp-4">
+        {description}
       </p>
     </div>
   );
@@ -154,9 +152,18 @@ export default function Home() {
             technical skillsets and knowledge summarized below.
           </p>
           <div className="grid grid-cols-3 gap-10">
-            <Skill />
-            <Skill />
-            <Skill />
+            <Skill
+              title="Full Stack Web Development"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+            />
+            <Skill
+              title="Full Stack Web Development"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+            />
+            <Skill
+              title="Full Stack Web Development"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+            />
           </div>
         </Section>
         <Section>
