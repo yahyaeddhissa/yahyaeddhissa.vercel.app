@@ -4,6 +4,7 @@ import { SocialLink } from "./social-link";
 import { Metadata } from "next";
 import { Section } from "./section";
 import { Fragment } from "react";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
@@ -92,7 +93,10 @@ export default function Home() {
       <div className="h-screen border-b border-b-gray-800">
         <header className="flex md:justify-between justify-center items-center h-20 md:px-24 px-6 w-screen">
           <div className="flex items-center gap-2 flex-none">
-            <div className="md:h-8 md:w-8 w-6 h-6 bg-green-800 rounded-full flex-none" />
+            <div
+              className="bg-cover md:h-8 md:w-8 w-6 h-6 bg-green-800 rounded-full flex-none border-gray-700 border"
+              style={{ backgroundImage: "url('avatar.png')" }}
+            />
             <div className="md:text-md">
               <span className="font-medium">YAHYA</span>{" "}
               <span className="font-bold">EDDHISSA</span>{" "}
