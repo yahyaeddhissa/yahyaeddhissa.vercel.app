@@ -164,11 +164,11 @@ export default function Home() {
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
             />
             <Skill
-              title="Full Stack Web Development"
+              title="Software Architecture and Design"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
             />
             <Skill
-              title="Full Stack Web Development"
+              title="UX Design and Accessibility"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
             />
           </div>
@@ -186,24 +186,28 @@ export default function Home() {
           </p>
           <div className="grid grid-cols-2 gap-5">
             <Project
-              title="Archade"
-              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
-              tags={["Social Networking", "Discussions", "Authentication"]}
+              title="Orderedo"
+              description="Orderedo is a global product registry meant to provide accurate product information"
+              tags={[
+                "Data Entry and Management",
+                "Discussions",
+                "Collaboration",
+              ]}
             />
             <Project
               title="Archade"
               description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
-              tags={["Social Networking", "Discussions", "Authentication"]}
+              tags={["Social Networking", "Discussions", "Sharing"]}
             />
             <Project
-              title="Archade"
-              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
-              tags={["Social Networking", "Discussions", "Authentication"]}
+              title="Accessor"
+              description="Accessor is an open-source authentication and access management service for application of any scale"
+              tags={["Access Management", "Permissions", "Authorization"]}
             />
             <Project
-              title="Archade"
-              description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
-              tags={["Social Networking", "Discussions", "Authentication"]}
+              title="Vortech"
+              description="Vortech is a free and open-source no-code website development platform for startups and businesses of any size"
+              tags={["No-Code", "Business", "Website Builder"]}
             />
           </div>
         </Section>
