@@ -67,25 +67,37 @@ function Project({
   );
 }
 
-function BlogPost() {
+function BlogPost({
+  title,
+  description,
+  date,
+  readMinutes,
+  tags,
+}: {
+  title: string;
+  description: string;
+  date?: Date;
+  readMinutes?: number;
+  tags: string[];
+}) {
   return (
     <div className="rounded bg-gray-900 px-8 py-6">
       <div className="flex justify-stretch mb-3 gap-5 text-sm items-center">
-        <div className="h-7 flex items-center bg-sky-700 rounded-full px-4">
-          Typescript
-        </div>
+        {tags.map((tag) => (
+          <div
+            key={Math.random()}
+            className="h-7 flex items-center bg-sky-700 rounded-full px-4"
+          >
+            {tag}
+          </div>
+        ))}
         <div className="text-gray-400">29 April 2023</div>
         <div className="h-0 border-t border-t-gray-700 flex-auto"></div>
         <div className="text-gray-300">8 min read</div>
       </div>
-      <h4 className="text-xl font-semibold line-clamp-2 mb-2">
-        Predictable Error Handling with Typescript - Part 1: The Result Class
-      </h4>
+      <h4 className="text-xl font-semibold line-clamp-2 mb-2">{title}</h4>
       <p className="line-clamp-2 text-sm text-gray-300 font-normal mb-4">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat placeat
-        voluptatem possimus, tenetur nobis numquam praesentium rem excepturi
-        ipsa fuga sapiente aperiam officia alias dolor culpa ipsam non debitis
-        ipsum?
+        {description}
       </p>
       <p className="text-green-500 underline underline-offset-4">Read more</p>
     </div>
@@ -232,10 +244,26 @@ export default function Home() {
             the years. Some of them are open-source, some of them are not.
           </p>
           <div className="grid grid-cols-2 gap-5">
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
-            <BlogPost />
+            <BlogPost
+              tags={["Typescript"]}
+              title="Predictable Error Handling with Typescript - Part 1: The Result Class"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam libero officia ratione tenetur? Qui eveniet voluptate laudantium sunt officia ab voluptas similique, mollitia inventore ratione debitis sit ducimus repudiandae!"
+            />
+            <BlogPost
+              tags={["Typescript"]}
+              title="Predictable Error Handling with Typescript - Part 1: The Result Class"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam libero officia ratione tenetur? Qui eveniet voluptate laudantium sunt officia ab voluptas similique, mollitia inventore ratione debitis sit ducimus repudiandae!"
+            />{" "}
+            <BlogPost
+              tags={["Typescript"]}
+              title="Predictable Error Handling with Typescript - Part 1: The Result Class"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam libero officia ratione tenetur? Qui eveniet voluptate laudantium sunt officia ab voluptas similique, mollitia inventore ratione debitis sit ducimus repudiandae!"
+            />
+            <BlogPost
+              tags={["Typescript"]}
+              title="Predictable Error Handling with Typescript - Part 1: The Result Class"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam libero officia ratione tenetur? Qui eveniet voluptate laudantium sunt officia ab voluptas similique, mollitia inventore ratione debitis sit ducimus repudiandae!"
+            />
           </div>
         </Section>
       </main>
