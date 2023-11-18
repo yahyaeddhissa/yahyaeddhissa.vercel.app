@@ -4,105 +4,15 @@ import { SocialLink } from "./social-link";
 import { Metadata } from "next";
 import { Section } from "./section";
 import { Fragment } from "react";
+import { Skill } from "./skill";
+import { Project } from "./project";
+import { BlogPost } from "./blog-post";
 
 export const metadata: Metadata = {
   title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
   description:
     "I'm a Software Engineer currently working as the CTO and co-founder of Orderedo. I'm very enthusiastic when it comes to Developer Experience and Design Patterns, while also emphasizing on Accessibility and good User Experience. I also share what I know on my personal blog and contribute to open-source projects.",
 };
-
-function Skill({ title, description }: { title: string; description: string }) {
-  return (
-    <div>
-      <div className="mb-1.5">
-        <i className={`ti ti-world text-4xl`} />
-      </div>
-      <h4 className="text-xl font-semibold mb-2">{title}</h4>
-      <p className="text-sm font-normal text-gray-400 line-clamp-4">
-        {description}
-      </p>
-    </div>
-  );
-}
-
-function Project({
-  title,
-  description,
-  imageUrl = "",
-  tags,
-}: {
-  title: string;
-  description: string;
-  imageUrl?: string;
-  tags: string[];
-}) {
-  return (
-    <div className="bg-sky-600 bg-opacity-10 rounded relative overflow-hidden">
-      <div className="flex items-start gap-4 px-7 py-4 mb-3">
-        <div className="flex items-center gap-4">
-          <h4 className="text-xl font-medium">{title}</h4>
-          <div className="h-0 w-10 border-t border-gray-500 flex-none" />
-        </div>
-        <p className="font-normal line-clamp-3">{description}</p>
-      </div>
-      <div className="flex">
-        <div className="ml-auto w-[90%]">
-          <div className="flex gap-2 text-xs font-normal mb-3">
-            {tags.map((item) => (
-              <div
-                className="flex h-7 items-center px-4 bg-white bg-opacity-5 rounded-full"
-                key={Math.random()}
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-          <div
-            className="h-60 w-full bg-sky-600 bg-cover rounded-tl-md"
-            style={{ backgroundImage: `url("${imageUrl}")` }}
-          ></div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function BlogPost({
-  title,
-  description,
-  date,
-  readMinutes,
-  tags,
-}: {
-  title: string;
-  description: string;
-  date?: Date;
-  readMinutes?: number;
-  tags: string[];
-}) {
-  return (
-    <div className="rounded bg-gray-900 px-8 py-6">
-      <div className="flex justify-stretch mb-3 gap-5 text-sm items-center">
-        {tags.map((tag) => (
-          <div
-            key={Math.random()}
-            className="h-7 flex items-center bg-sky-700 rounded-full px-4"
-          >
-            {tag}
-          </div>
-        ))}
-        <div className="text-gray-400">29 April 2023</div>
-        <div className="h-0 border-t border-t-gray-700 flex-auto"></div>
-        <div className="text-gray-300">8 min read</div>
-      </div>
-      <h4 className="text-xl font-semibold line-clamp-2 mb-2">{title}</h4>
-      <p className="line-clamp-2 text-sm text-gray-300 font-normal mb-4">
-        {description}
-      </p>
-      <p className="text-green-500 underline underline-offset-4">Read more</p>
-    </div>
-  );
-}
 
 export default function Home() {
   return (
@@ -253,7 +163,7 @@ export default function Home() {
               tags={["Typescript"]}
               title="Predictable Error Handling with Typescript - Part 1: The Result Class"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nam libero officia ratione tenetur? Qui eveniet voluptate laudantium sunt officia ab voluptas similique, mollitia inventore ratione debitis sit ducimus repudiandae!"
-            />{" "}
+            />
             <BlogPost
               tags={["Typescript"]}
               title="Predictable Error Handling with Typescript - Part 1: The Result Class"
