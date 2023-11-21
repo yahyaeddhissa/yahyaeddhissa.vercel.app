@@ -3,14 +3,16 @@ export function Project({
   description,
   imageUrl = "",
   tags,
+  color,
 }: {
   title: string;
   description: string;
   imageUrl?: string;
   tags: string[];
+  color: string;
 }) {
   return (
-    <div className="bg-sky-600 bg-opacity-10 rounded relative overflow-hidden">
+    <div className={"bg-opacity-10 rounded relative overflow-hidden " + color}>
       <div className="md:flex items-start gap-4 md:px-7 px-4 md:py-4 py-3 mb-3">
         <div className="md:flex items-center gap-4">
           <h4 className="text-xl font-medium">{title}</h4>
@@ -31,7 +33,7 @@ export function Project({
             ))}
           </div>
           <div
-            className="md:h-60 h-36 w-full bg-sky-600 bg-cover rounded-tl-md"
+            className="md:h-60 h-36 w-full bg-gray-300 bg-cover rounded-tl-md"
             style={{ backgroundImage: `url("${imageUrl}")` }}
           ></div>
         </div>

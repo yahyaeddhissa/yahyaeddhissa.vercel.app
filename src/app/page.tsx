@@ -78,14 +78,17 @@ export default function Home() {
             <Skill
               title="Full Stack Web Development"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+              icon="world"
             />
             <Skill
               title="Software Architecture and Design"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+              icon="affiliate"
             />
             <Skill
               title="UX Design and Accessibility"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
+              icon="app-window"
             />
           </div>
         </Section>
@@ -103,21 +106,25 @@ export default function Home() {
                 "Discussions",
                 "Collaboration",
               ]}
+              color="bg-sky-600"
             />
             <Project
               title="Archade"
               description="Archade is a social network for architects and construction engineers, plus all building enthusiasts"
               tags={["Social Networking", "Discussions", "Sharing"]}
+              color="bg-yellow-700"
             />
             <Project
               title="Accessor"
               description="Accessor is an open-source authentication and access management service for application of any scale"
               tags={["Access Management", "Permissions", "Authorization"]}
+              color="bg-purple-600"
             />
             <Project
               title="Vortech"
               description="Vortech is a free and open-source no-code website development platform for startups and businesses of any size"
               tags={["No-Code", "Business", "Website Builder"]}
+              color="bg-red-600"
             />
           </div>
         </Section>
