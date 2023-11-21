@@ -38,7 +38,7 @@ export default function Home() {
           </nav>
         </header>
         <div className="lg:w-2/3 md:w-3/4 md:px-24 px-6 md:py-20 py-14 text-center md:text-start">
-          <h2 className="px-3 py-1.5 bg-green-950 rounded inline-block mb-3">
+          <h2 className="px-3 py-1.5 w-full md:w-auto bg-green-950 rounded inline-block mb-3">
             Full Stack Web Solutions Engineer
           </h2>
           <h1 className="md:text-5xl text-3xl font-semibold mb-6">
@@ -52,11 +52,11 @@ export default function Home() {
             good User Experience. I also share what I know on my personal blog
             and contribute to open-source projects.
           </p>
-          <div className="flex md:gap-6 gap-4 items-center justify-center md:justify-normal">
+          <div className="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal">
             <div className="flex-none">
               <Button>View Projects</Button>
             </div>
-            <div className="h-0 w-20 border-t border-gray-500" />
+            <div className="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900" />
             <nav className="flex md:gap-3 gap-2">
               <SocialLink icon="brand-github" />
               <SocialLink icon="brand-linkedin" />
