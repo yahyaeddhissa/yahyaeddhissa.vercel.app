@@ -17,8 +17,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Fragment>
-      <div className="h-screen border-b border-b-gray-800">
-        <header className="flex md:justify-between justify-center items-center h-20 md:px-24 px-6 w-screen">
+      <div className="md:h-screen border-b border-b-gray-800">
+        <header className="flex md:justify-between justify-center items-center md:h-20 h-14 border-b border-b-gray-800 md:px-24 px-6 w-screen">
           <div className="flex items-center gap-2 flex-none">
             <div
               className="bg-cover md:h-8 md:w-8 w-6 h-6 bg-green-800 rounded-full flex-none border-gray-700 border"
@@ -37,7 +37,7 @@ export default function Home() {
             <Button>Contact me</Button>
           </nav>
         </header>
-        <div className="lg:w-2/3 md:w-3/4 md:px-24 px-6 md:pt-20 pt-14 text-center md:text-start">
+        <div className="lg:w-2/3 md:w-3/4 md:px-24 px-6 md:py-20 py-14 text-center md:text-start">
           <h2 className="px-3 py-1.5 bg-green-950 rounded inline-block mb-3">
             Full Stack Web Solutions Engineer
           </h2>
@@ -80,7 +80,7 @@ export default function Home() {
             services for clients all over the world. This work involves many
             technical skillsets and knowledge summarized below.
           </p>
-          <div className="grid grid-cols-3 gap-10">
+          <div className="grid md:grid-cols-3 gap-10">
             <Skill
               title="Full Stack Web Development"
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic eligendi corrupti, quod odit odio, iste modi totam excepturi nemo recusandae culpa saepe officiis harum voluptatem maiores eveniet est eos quibusdam?"
@@ -106,7 +106,7 @@ export default function Home() {
             Below is a featued list of the most remarkable projects I built over
             the years. Some of them are open-source, some of them are not.
           </p>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             <Project
               title="Orderedo"
               description="Orderedo is a global product registry meant to provide accurate product information"
@@ -153,7 +153,7 @@ export default function Home() {
             Below is a featued list of the most remarkable projects I built over
             the years. Some of them are open-source, some of them are not.
           </p>
-          <div className="grid grid-cols-2 gap-5">
+          <div className="grid md:grid-cols-2 gap-5">
             <BlogPost
               tags={["Typescript"]}
               title="Predictable Error Handling with Typescript - Part 1: The Result Class"
