@@ -68,18 +68,12 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <Section>
-          <div className="mb-3">
-            <h3 className="text-4xl font-semibold text-green-600 mb-1">
-              What I do best
-            </h3>
-            <div className="h-0 w-32 border-t-2 border-green-600" />
-          </div>
-          <p className="text-gray-300 mb-12">
-            I have more than 2 years of experience building web platforms and
+        <Section
+          title="What I do best"
+          description="I have more than 2 years of experience building web platforms and
             services for clients all over the world. This work involves many
-            technical skillsets and knowledge summarized below.
-          </p>
+            technical skillsets and knowledge summarized below."
+        >
           <div className="grid md:grid-cols-3 gap-10">
             <Skill
               title="Full Stack Web Development"
@@ -95,17 +89,11 @@ export default function Home() {
             />
           </div>
         </Section>
-        <Section>
-          <div className="mb-3">
-            <h3 className="text-4xl font-semibold text-green-600 mb-1">
-              Featured Projects
-            </h3>
-            <div className="h-0 w-32 border-t-2 border-green-600" />
-          </div>
-          <p className="text-gray-300 mb-12">
-            Below is a featued list of the most remarkable projects I built over
-            the years. Some of them are open-source, some of them are not.
-          </p>
+        <Section
+          title="Featured Projects"
+          description="Below is a featued list of the most remarkable projects I built over
+            the years. Some of them are open-source, some of them are not."
+        >
           <div className="grid md:grid-cols-2 gap-5">
             <Project
               title="Orderedo"
@@ -142,17 +130,11 @@ export default function Home() {
             <Button>Contact Me</Button>
           </div>
         </Section>
-        <Section>
-          <div className="mb-3">
-            <h3 className="text-4xl font-semibold text-green-600 mb-1">
-              Latest Blog Posts
-            </h3>
-            <div className="h-0 w-32 border-t-2 border-green-600" />
-          </div>
-          <p className="text-gray-300 mb-12">
-            Below is a featued list of the most remarkable projects I built over
-            the years. Some of them are open-source, some of them are not.
-          </p>
+        <Section
+          title="Latest Blog Posts"
+          description="Below is a featued list of the most remarkable projects I built over
+            the years. Some of them are open-source, some of them are not."
+        >
           <div className="grid md:grid-cols-2 gap-5">
             <BlogPost
               tags={["Typescript"]}
