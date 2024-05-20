@@ -1,19 +1,6 @@
-import Link from "next/link";
 import { Button } from "./button";
 import { SocialLink } from "./_components/SocialLink";
-import { Metadata } from "next";
-import { Section } from "./section";
 import { Fragment } from "react";
-import { Skill } from "./skill";
-import { Project } from "./project";
-import { BlogPost } from "./blog-post";
-import { Header } from "./_components/Header";
-
-export const metadata: Metadata = {
-  title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
-  description:
-    "I'm a Software Engineer currently working as the CTO and co-founder of Orderedo. I'm very enthusiastic when it comes to Developer Experience and Design Patterns, while also emphasizing on Accessibility and good User Experience. I also share what I know on my personal blog and contribute to open-source projects.",
-};
 
 export default function Home() {
   return (
