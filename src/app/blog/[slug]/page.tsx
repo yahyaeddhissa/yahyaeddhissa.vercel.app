@@ -54,10 +54,9 @@ export default async function BlogPostPage({ params: { slug } }) {
           </div>
         </header>
         <div className="font-normal text-lg text-gray-200">
-          <ReactMarkdown
-            components={renderers}
-            children={post.content.markdown}
-          />
+          <ReactMarkdown components={renderers}>
+            {post.content.markdown}
+          </ReactMarkdown>
         </div>
       </div>
     )
@@ -78,7 +77,6 @@ const renderers: Partial<Components> = {
             {...rest}
             ref={ref as Ref<ReactSyntaxHighlighter>}
             PreTag="div"
-            children={String(children).replace(/\n$/, "")}
             language={match[1]}
             style={nightOwl}
             customStyle={{
@@ -87,7 +85,9 @@ const renderers: Partial<Components> = {
               overflow: "visible",
               background: "transparent",
             }}
-          />
+          >
+            {String(children).replace(/\n$/, "")}
+          </ReactSyntaxHighlighter>
         </div>
       </div>
     ) : (
