@@ -30,6 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta
+          name="google-site-verification"
+          content="PlqSUAjVqkvMAov71kv_Wb1oyEgrLKz60zTb4-iwsIY"
+        />
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
