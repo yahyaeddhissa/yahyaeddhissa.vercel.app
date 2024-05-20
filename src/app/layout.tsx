@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Raleway, Roboto, Roboto_Condensed } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Header } from "./_components/Header";
 import { Footer } from "./_components/Footer";
