@@ -1,6 +1,7 @@
 import { client } from "@/graphql-client";
 import { gql } from "@urql/core";
 import dayjs from "dayjs";
+import Link from "next/link";
 import { Ref } from "react";
 import ReactMarkdown, { Components } from "react-markdown";
 import ReactSyntaxHighlighter from "react-syntax-highlighter";
@@ -36,10 +37,10 @@ export default async function BlogPostPage({
     post && (
       <div className="px-36">
         <header className="mb-8">
-          <h1 className="text-2xl font-semibold mb-1.5">{post.title}</h1>
+          <h1 className="text-2xl font-semibold mb-1">{post.title}</h1>
           <div className="flex font-normal text-sm text-gray-400 mb-3">
             <div className="flex gap-4">
-              <div>Yahya Eddhissa</div>
+              <Link href="/">Yahya Eddhissa</Link>
               <span>|</span>
               <div>
                 {dayjs(post.publishedAt).format("LL")} (

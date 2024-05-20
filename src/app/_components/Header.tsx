@@ -19,7 +19,7 @@ export function Header() {
       <nav className="md:flex items-center gap-8 hidden text-sm font-medium">
         <Link href="/">About</Link>
         <Link href="/">Projects</Link>
-        <Link href="/">Blog</Link>
+        <Link href="/blog">Blog</Link>
         <div className="flex items-center bg-white/10 rounded-full h-8 px-3 text-sm font-medium">
           <i className="ti ti-search mr-2" />
           <input

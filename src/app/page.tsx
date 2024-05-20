@@ -2,7 +2,7 @@ import { Button } from "./button";
 import { SocialLink } from "./_components/SocialLink";
 import { Fragment } from "react";
 
-export default function Home() {
+export default async function Home() {
   return (
     <Fragment>
       <div className="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start">
@@ -20,14 +20,30 @@ export default function Home() {
           </div>
           <div className="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900" />
           <nav className="flex md:gap-3 gap-2">
-            <SocialLink icon="brand-github" />
-            <SocialLink icon="brand-linkedin" />
-            <SocialLink icon="brand-stackoverflow" />
-            <SocialLink icon="brand-dribbble" />
-            <SocialLink icon="brand-reddit" />
+            <SocialLink
+              href="https://github.com/yahyaeddhissa"
+              icon="brand-github"
+            />
+            <SocialLink
+              href="https://www.linkedin.com/in/yahya-eddhissa"
+              icon="brand-linkedin"
+            />
+            <SocialLink
+              href="https://stackoverflow.com/users/18075667/yahya-eddhissa"
+              icon="brand-stackoverflow"
+            />
+            <SocialLink
+              href="https://dribbble.com/yahya_eddhissa"
+              icon="brand-dribbble"
+            />
+            <SocialLink
+              href="https://www.reddit.com/user/yahya_eddhissa"
+              icon="brand-reddit"
+            />
           </nav>
         </div>
       </div>
+
       {/* <main>
         <Section
           title="What I do best"
