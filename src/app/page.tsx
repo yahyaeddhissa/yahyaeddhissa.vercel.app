@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { Button } from "./button";
-import { SocialLink } from "./social-link";
+import { SocialLink } from "./_components/SocialLink";
 import { Metadata } from "next";
 import { Section } from "./section";
 import { Fragment } from "react";
 import { Skill } from "./skill";
 import { Project } from "./project";
 import { BlogPost } from "./blog-post";
+import { Header } from "./_components/Header";
 
 export const metadata: Metadata = {
   title: "Yahya Eddhissa - Full Stack Web Solutions Engineer",
@@ -17,57 +18,30 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <Fragment>
-      <div className="md:h-screen border-b border-b-gray-800">
-        <header className="flex md:justify-between justify-center items-center md:h-20 h-14 border-b border-b-gray-800 md:px-24 px-6 w-screen">
-          <div className="flex items-center gap-2 flex-none">
-            <div
-              className="bg-cover md:h-8 md:w-8 w-6 h-6 bg-green-800 rounded-full flex-none border-gray-700 border"
-              style={{ backgroundImage: "url('avatar.png')" }}
-            />
-            <div className="md:text-md">
-              <span className="font-medium">YAHYA</span>{" "}
-              <span className="font-bold">EDDHISSA</span>{" "}
-              <span className="font-bold text-xl text-green-500">.</span>
-            </div>
-          </div>
-          <nav className="md:flex items-center gap-8 hidden">
-            <Link href="/">About</Link>
-            <Link href="/">Projects</Link>
-            <Link href="/">Blog</Link>
-            <Button>Contact me</Button>
-          </nav>
-        </header>
-        <div className="lg:w-2/3 md:w-3/4 md:px-24 px-6 md:py-20 py-14 text-center md:text-start">
-          <h2 className="px-3 py-1.5 w-full md:w-auto bg-green-950 rounded inline-block mb-3">
-            Full Stack Web Solutions Engineer
-          </h2>
-          <h1 className="md:text-5xl text-3xl font-semibold mb-6">
-            Design and Code Exceptional Online Experiences.
+      <div className="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start">
+        <div className="mb-8">
+          <h1 className="md:text-[40px] text-3xl font-semibold mb-2.5">
+            Yahya Eddhissa
           </h1>
-          <p className="text-sm text-gray-400 mb-10 md:block hidden">
-            I&apos;m a Software Engineer currently working as the CTO and
-            co-founder of <span className="underline text-white">Orderedo</span>
-            . I&apos;m very enthusiastic when it comes to Developer Experience
-            and Design Patterns, while also emphasizing on Accessibility and
-            good User Experience. I also share what I know on my personal blog
-            and contribute to open-source projects.
-          </p>
-          <div className="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal">
-            <div className="flex-none">
-              <Button>View Projects</Button>
-            </div>
-            <div className="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900" />
-            <nav className="flex md:gap-3 gap-2">
-              <SocialLink icon="brand-github" />
-              <SocialLink icon="brand-linkedin" />
-              <SocialLink icon="brand-stackoverflow" />
-              <SocialLink icon="brand-dribbble" />
-              <SocialLink icon="brand-reddit" />
-            </nav>
+          <h2 className="font-semibold text-[18px]">
+            Full-Stack Software Engineer
+          </h2>
+        </div>
+        <div className="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal">
+          <div className="flex-none">
+            <Button>View Projects</Button>
           </div>
+          <div className="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900" />
+          <nav className="flex md:gap-3 gap-2">
+            <SocialLink icon="brand-github" />
+            <SocialLink icon="brand-linkedin" />
+            <SocialLink icon="brand-stackoverflow" />
+            <SocialLink icon="brand-dribbble" />
+            <SocialLink icon="brand-reddit" />
+          </nav>
         </div>
       </div>
-      <main>
+      {/* <main>
         <Section
           title="What I do best"
           description="I have more than 2 years of experience building web platforms and
@@ -165,16 +139,7 @@ export default function Home() {
             />
           </div>
         </Section>
-      </main>
-      <footer className="h-16 px-5 text-xs md:text-sm flex items-center justify-center">
-        <div>
-          &#169; 2023-2024. Made With Love By
-          <Link href="/" className="text-green-600 underline ml-1">
-            Yahya Eddhissa
-          </Link>
-          . All Rights Reserved
-        </div>
-      </footer>
+      </main> */}
     </Fragment>
   );
 }
