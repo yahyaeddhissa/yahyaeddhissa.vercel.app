@@ -26,7 +26,11 @@ async function postQuery(slug: string) {
   return result.data.publication.post;
 }
 
-export default async function BlogPostPage({ params: { slug } }) {
+export default async function BlogPostPage({
+  params: { slug },
+}: {
+  params: { slug: string };
+}) {
   const post = await postQuery(slug);
   return (
     post && (
