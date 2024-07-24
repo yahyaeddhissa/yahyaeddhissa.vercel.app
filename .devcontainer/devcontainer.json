@@ -9,7 +9,8 @@
         "bradlc.vscode-tailwindcss",
         "hwencc.html-tag-wrapper",
         "unifiedjs.vscode-mdx",
-        "GraphQL.vscode-graphql"
+        "GraphQL.vscode-graphql",
+        "astro-build.astro-vscode"
       ]
     }
   }

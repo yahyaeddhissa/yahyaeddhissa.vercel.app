@@ -1,0 +1,55 @@
+---
+import Button from "../components/Button.astro";
+import SocialLink from "../components/SocialLink.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Welcome to Astro.">
+  <div>
+    <div
+      class="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start"
+    >
+      <div class="mb-8">
+        <h1 class="text-6xl font-medium mb-2.5">Yahya Eddhissa</h1>
+        <h2 class="font-normal text-gray-300 text-2xl">
+          Full-Stack Software Engineer
+        </h2>
+      </div>
+      <div
+        class="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal"
+      >
+        <div class="flex-none">
+          <Button>View Projects</Button>
+        </div>
+        <div
+          class="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900"
+        >
+        </div>
+        <nav class="flex md:gap-3 gap-2">
+          <SocialLink
+            href="https://github.com/yahyaeddhissa"
+            icon="brand-github"
+          />
+          <SocialLink
+            href="https://www.linkedin.com/in/yahya-eddhissa"
+            icon="brand-linkedin"
+          />
+          <SocialLink
+            href="https://stackoverflow.com/users/18075667/yahya-eddhissa"
+            icon="brand-stackoverflow"
+          />
+          <SocialLink
+            href="https://dribbble.com/yahya_eddhissa"
+            icon="brand-dribbble"
+          />
+          <SocialLink
+            href="https://www.reddit.com/user/yahya_eddhissa"
+            icon="brand-reddit"
+          />
+        </nav>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style></style>

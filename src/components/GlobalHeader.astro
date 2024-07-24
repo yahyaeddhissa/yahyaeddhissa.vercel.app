@@ -1,0 +1,36 @@
+---
+import Image from "astro/components/Image.astro";
+---
+
+<header
+  class="flex-none flex md:justify-between justify-center items-center md:h-16 h-10 md:px-24 px-6 w-screen"
+>
+  <div class="flex items-center gap-3 flex-none">
+    <Image
+      src="/avatar.png"
+      alt="avatar"
+      height={36}
+      width={36}
+      class="bg-cover h-9 w-9 bg-green-800 rounded-full flex-none border-gray-700 border"
+    />
+    <a href="/">
+      <div class="text-lg">
+        <span class="font-normal">YAHYA</span>{" "}
+        <span class="font-medium">EDDHISSA</span>{" "}
+        <span class="font-bold text-xl text-green-500">.</span>
+      </div>
+    </a>
+  </div>
+  <nav class="md:flex items-center gap-8 hidden text-sm font-medium">
+    <a href="/">About</a>
+    <a href="/">Projects</a>
+    <a href="/blog">Blog</a>
+    <div class="flex items-center bg-white/10 rounded-full h-8 px-3 w-64">
+      <i class="ti ti-search mr-2 text-lg"></i>
+      <span
+        class="bg-transparent outline-none text-sm font-normal text-gray-400"
+        >Search blog...</span
+      >
+    </div>
+  </nav>
+</header>
