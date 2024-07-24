@@ -3,9 +3,9 @@ import Image from "astro/components/Image.astro";
 ---
 
 <header
-  class="flex-none flex md:justify-between justify-center items-center md:h-16 h-10 md:px-24 px-6 w-screen"
+  class="flex-none flex md:justify-between justify-center items-center h-20 px-24 w-screen"
 >
-  <div class="flex items-center gap-3 flex-none">
+  <div class="flex items-center gap-3 flex-none h-full">
     <Image
       src="/avatar.png"
       alt="avatar"
@@ -21,7 +21,7 @@ import Image from "astro/components/Image.astro";
       </div>
     </a>
   </div>
-  <nav class="md:flex items-center gap-8 hidden text-sm font-medium">
+  <nav class="flex h-full items-center gap-8 text-sm font-medium">
     <a href="/">About</a>
     <a href="/">Projects</a>
     <a href="/blog">Blog</a>

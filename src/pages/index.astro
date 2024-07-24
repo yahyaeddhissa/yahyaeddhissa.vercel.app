@@ -5,14 +5,14 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-  <div>
+  <section class="px-24 py-8">
     <div
       class="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start"
     >
       <div class="mb-8">
-        <h1 class="text-6xl font-medium mb-2.5">Yahya Eddhissa</h1>
-        <h2 class="font-normal text-gray-300 text-2xl">
-          Full-Stack Software Engineer
+        <h1 class="text-6xl font-medium mb-2.5">I'm Yahya Eddhissa</h1>
+        <h2 class="font-normal text-gray-400 text-2xl">
+          I'm a Full-Stack Software Engineer
         </h2>
       </div>
       <div
@@ -49,7 +49,45 @@ import Layout from "../layouts/Layout.astro";
         </nav>
       </div>
     </div>
-  </div>
+  </section>
+  <section class="px-24 py-20 bg-gray-900">
+    <div class="uppercase text-lg text-green-500 mb-4">about me</div>
+    <div class="grid grid-cols-2 gap-40 items-end">
+      <div>
+        <h2 class="text-4xl font-medium mb-4">
+          I've been developing web apps since 2022
+        </h2>
+        <p class="text-gray-400 text-sm leading-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
+          praesentium asperiores voluptas ipsa. Dolor in, doloribus commodi
+          illum impedit deleniti, voluptates quaerat et ducimus dignissimos
+          tempore, omnis.
+        </p>
+      </div>
+      <div>
+        <div class="grid grid-cols-2 mb-4">
+          <div class="flex items-end gap-3">
+            <div class="text-7xl font-medium">3</div>
+            <div class="mb-2 leading-5 font-normal text-lg">
+              <div>Years of</div><div>experience</div>
+            </div>
+          </div>
+          <div class="flex items-end gap-3">
+            <div class="text-7xl font-medium">4</div>
+            <div class="mb-2 leading-5 font-normal text-lg">
+              <div>Successful</div><div>projects</div>
+            </div>
+          </div>
+        </div>
+        <p class="text-gray-400 text-sm leading-6">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ex
+          labore expedita aliquid maxime, distinctio harum aspernatur provident
+          laborum ab cupiditate quae nam accusamus nisi soluta odio officiis ea
+          veritatis
+        </p>
+      </div>
+    </div>
+  </section>
 </Layout>
 
 <style></style>

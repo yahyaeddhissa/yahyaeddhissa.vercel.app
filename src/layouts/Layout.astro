@@ -9,7 +9,10 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="text-white bg-gray-950 font-rubik">
+<html
+  lang="en"
+  class="text-white bg-gray-950 font-rubik overflow-x-hidden w-screen"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -35,7 +38,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <GlobalHeader />
-    <main class="px-24 py-8">
+    <main>
       <slot />
     </main>
   </body>
