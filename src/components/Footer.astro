@@ -1,0 +1,35 @@
+---
+import { Image } from "astro:assets";
+import SocialLinks from "./SocialLinks.astro";
+---
+
+<footer class="bg-gray-950">
+  <div class="py-16 px-24 grid grid-cols-2">
+    <div>
+      <div class="flex items-center gap-5 mb-8">
+        <Image
+          src="/avatar.png"
+          alt="Avatar"
+          width={96}
+          height={96}
+          class="h-24 w-24 rounded-full bg-green-500"
+        />
+        <div>
+          <div class="font-semibold text-2xl mb-1">Yahya Eddhissa</div>
+          <div class="text-base text-gray-400">
+            Full-Stack Software Engineer
+          </div>
+        </div>
+      </div>
+      <SocialLinks />
+    </div>
+    <div>Get in touch</div>
+  </div>
+  <div
+    class="border-t border-t-gray-800 h-16 px-24 flex items-center justify-center"
+  >
+    &#169; 2023-2024. Made By
+    <a href="/" class="text-green-600 underline ml-1"> Yahya Eddhissa</a>. All
+    Rights Reserved
+  </div>
+</footer>

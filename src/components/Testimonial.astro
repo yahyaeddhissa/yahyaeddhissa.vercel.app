@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+---
+
+<div>
+  <div class="mb-4">
+    <Image
+      src="/lesaffre.png"
+      height={69 / 2.5}
+      width={459 / 2.5}
+      alt="Lesaffre"
+    />
+  </div>
+  <div class="text-lg text-gray-400 mb-4">
+    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum illum
+    quasi fugiat nihil officiis quibusdam, dolorem incidunt, quidem eveniet
+    laboriosam maxime distinctio voluptatem atque totam enim accusantium
+    dignissimos rerum esse."
+  </div>
+  <div class="flex items-center gap-4">
+    <Image
+      src="/avatar.png"
+      alt="Avatar"
+      width={96}
+      height={96}
+      class="h-12 w-12 rounded-full bg-green-500"
+    />
+    <div>
+      <div class="font-medium">John Doe</div>
+      <div class="text-gray-400">HR Manager at Lesaffre</div>
+    </div>
+  </div>
+</div>

@@ -10,7 +10,8 @@
         "hwencc.html-tag-wrapper",
         "unifiedjs.vscode-mdx",
         "GraphQL.vscode-graphql",
-        "astro-build.astro-vscode"
+        "astro-build.astro-vscode",
+        "mhutchie.git-graph"
       ]
     }
   }

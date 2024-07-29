@@ -1,93 +1,15 @@
 ---
-import Button from "../components/Button.astro";
-import SocialLink from "../components/SocialLink.astro";
+import AboutSection from "../components/home/AboutSection.astro";
+import HeroSection from "../components/home/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
+import TestimonialsSection from "../components/home/TestimonialsSection.astro";
 ---
 
 <Layout title="Yahya Eddhissa - Full-Stack Software Engineer">
-  <section class="px-24 py-8">
-    <div
-      class="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start"
-    >
-      <div class="mb-8">
-        <h1 class="text-6xl font-medium mb-2.5">I'm Yahya Eddhissa</h1>
-        <h2 class="font-normal text-gray-400 text-2xl">
-          I'm a Full-Stack Software Engineer
-        </h2>
-      </div>
-      <div
-        class="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal"
-      >
-        <div class="flex-none">
-          <Button>View Projects</Button>
-        </div>
-        <div
-          class="h-0 md:w-20 w-full border-t md:border-gray-500 border-gray-900"
-        >
-        </div>
-        <nav class="flex md:gap-3 gap-2">
-          <SocialLink
-            href="https://github.com/yahyaeddhissa"
-            icon="brand-github"
-          />
-          <SocialLink
-            href="https://www.linkedin.com/in/yahya-eddhissa"
-            icon="brand-linkedin"
-          />
-          <SocialLink
-            href="https://stackoverflow.com/users/18075667/yahya-eddhissa"
-            icon="brand-stackoverflow"
-          />
-          <SocialLink
-            href="https://dribbble.com/yahya_eddhissa"
-            icon="brand-dribbble"
-          />
-          <SocialLink
-            href="https://www.reddit.com/user/yahya_eddhissa"
-            icon="brand-reddit"
-          />
-        </nav>
-      </div>
-    </div>
-  </section>
-  <section class="px-24 py-20 bg-gray-900">
-    <div class="uppercase text-lg text-green-500 mb-4">about me</div>
-    <div class="grid grid-cols-2 gap-40 items-end">
-      <div>
-        <h2 class="text-4xl font-medium mb-4">
-          I've been developing web apps since 2022
-        </h2>
-        <p class="text-gray-400 text-sm leading-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex
-          praesentium asperiores voluptas ipsa. Dolor in, doloribus commodi
-          illum impedit deleniti, voluptates quaerat et ducimus dignissimos
-          tempore, omnis.
-        </p>
-      </div>
-      <div>
-        <div class="grid grid-cols-2 mb-4">
-          <div class="flex items-end gap-3">
-            <div class="text-7xl font-medium">3</div>
-            <div class="mb-2 leading-5 font-normal text-lg">
-              <div>Years of</div><div>experience</div>
-            </div>
-          </div>
-          <div class="flex items-end gap-3">
-            <div class="text-7xl font-medium">4</div>
-            <div class="mb-2 leading-5 font-normal text-lg">
-              <div>Successful</div><div>projects</div>
-            </div>
-          </div>
-        </div>
-        <p class="text-gray-400 text-sm leading-6">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum ex
-          labore expedita aliquid maxime, distinctio harum aspernatur provident
-          laborum ab cupiditate quae nam accusamus nisi soluta odio officiis ea
-          veritatis
-        </p>
-      </div>
-    </div>
-  </section>
+  <HeroSection />
+  <AboutSection />
+  <TestimonialsSection />
+  <section class="h-20 bg-gray-900"></section>
 </Layout>
 
 <style></style>

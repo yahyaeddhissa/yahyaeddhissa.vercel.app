@@ -1,0 +1,46 @@
+---
+import Testimonial from "../Testimonial.astro";
+---
+
+<section id="testimonials" class="px-24 bg-gray-950">
+  <div class="py-32 grid grid-cols-2">
+    <div>
+      <div class="uppercase text-lg text-green-500 mb-4">testimonials</div>
+      <h2 class="text-4xl font-medium mb-8">
+        From the amazing people <br />I've worked with
+      </h2>
+    </div>
+    <div>
+      <div id="testimonials-slider" class="overflow-hidden mb-12">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><Testimonial /></div>
+          <div class="swiper-slide"><Testimonial /></div>
+          <div class="swiper-slide"><Testimonial /></div>
+        </div>
+      </div>
+      <div id="pagination" class="flex items-center gap-2"></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import Swiper from "swiper";
+  import { Navigation, Pagination } from "swiper/modules";
+
+  const swiper = new Swiper("#testimonials-slider", {
+    modules: [Navigation, Pagination],
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: "#pagination",
+      bulletClass: "h-3 w-3 rounded-full bg-green-600 transition-all",
+      bulletActiveClass: "w-20",
+    },
+    autoplay: {
+      delay: 1000,
+    },
+  });
+</script>

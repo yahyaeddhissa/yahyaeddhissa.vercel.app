@@ -1,0 +1,27 @@
+---
+import Button from "../Button.astro";
+import SocialLink from "../SocialLink.astro";
+import SocialLinks from "../SocialLinks.astro";
+---
+
+<section id="hero" class="px-24 py-24">
+  <div
+    class="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start"
+  >
+    <div class="mb-8">
+      <h1 class="text-6xl font-medium mb-2.5">I'm Yahya Eddhissa</h1>
+      <h2 class="font-normal text-gray-400 text-2xl">
+        I'm a Full-Stack Software Engineer
+      </h2>
+    </div>
+    <div
+      class="flex flex-col md:flex-row md:gap-6 gap-4 items-center justify-center md:justify-normal"
+    >
+      <div class="flex-none">
+        <Button>View Projects</Button>
+      </div>
+      <div class="h-0 w-10 border-t md:border-gray-500 border-gray-900"></div>
+      <SocialLinks />
+    </div>
+  </div>
+</section>
