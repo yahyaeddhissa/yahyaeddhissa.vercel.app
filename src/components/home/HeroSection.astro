@@ -1,13 +1,10 @@
 ---
 import Button from "../Button.astro";
-import SocialLink from "../SocialLink.astro";
 import SocialLinks from "../SocialLinks.astro";
 ---
 
-<section id="hero" class="px-24 py-24">
-  <div
-    class="lg:w-2/3 md:w-3/4 md:pb-20 md:pt-12 py-10 text-center md:text-start"
-  >
+<section id="hero" class="grid grid-cols-5">
+  <div class="text-center md:text-start col-span-3 px-24 pb-48 pt-32">
     <div class="mb-8">
       <h1 class="text-6xl font-medium mb-2.5">I'm Yahya Eddhissa</h1>
       <h2 class="font-normal text-gray-400 text-2xl">
@@ -22,6 +19,26 @@ import SocialLinks from "../SocialLinks.astro";
       </div>
       <div class="h-0 w-10 border-t md:border-gray-500 border-gray-900"></div>
       <SocialLinks />
+    </div>
+  </div>
+  <div
+    class="w-full divide-y divide-gray-800 h-full flex pr-28 flex-col col-span-2 items-center justify-center"
+  >
+    <div class="py-8">
+      <div class="uppercase font-medium text-base mb-4">about me</div>
+      <div class="text-gray-400 mb-4 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cumque
+        vel earum exercitationem fugit autem porro deleniti.
+      </div>
+      <div>Learn More</div>
+    </div>
+    <div class="py-8">
+      <div class="uppercase font-medium text-base mb-4">my work</div>
+      <div class="text-gray-400 mb-4 text-sm">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum cumque
+        vel earum exercitationem fugit autem porro deleniti.
+      </div>
+      <div>Learn More</div>
     </div>
   </div>
 </section>
