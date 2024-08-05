@@ -3,9 +3,11 @@ import AboutSection from "../components/home/AboutSection.astro";
 import HeroSection from "../components/home/HeroSection.astro";
 import Layout from "../layouts/Layout.astro";
 import TestimonialsSection from "../components/home/TestimonialsSection.astro";
+import WebsiteStructuredData from "../components/WebsiteStructuredData.astro";
 ---
 
 <Layout title="Yahya Eddhissa - Full-Stack Software Engineer">
+  <WebsiteStructuredData slot="structured-data" />
   <HeroSection />
   <AboutSection />
   <TestimonialsSection />

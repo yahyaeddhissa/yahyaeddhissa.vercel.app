@@ -1,0 +1,14 @@
+---
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Yahya Eddhissa",
+  url: "https://yahyaeddhissa.vercel.app/",
+};
+---
+
+<script
+  is:inline
+  type="application/ld+json"
+  set:html={JSON.stringify(structuredData)}
+/>

@@ -11,7 +11,8 @@
         "unifiedjs.vscode-mdx",
         "GraphQL.vscode-graphql",
         "astro-build.astro-vscode",
-        "mhutchie.git-graph"
+        "mhutchie.git-graph",
+        "sissel.json-script-tag"
       ]
     }
   }

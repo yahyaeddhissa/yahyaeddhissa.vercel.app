@@ -28,6 +28,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
 
     <title>{title}</title>
+    <slot name="structured-data" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
